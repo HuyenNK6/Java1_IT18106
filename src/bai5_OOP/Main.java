@@ -5,6 +5,8 @@
  */
 package bai5_OOP;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author HuyenNK
@@ -25,8 +27,23 @@ public class Main {
         sv3.setTuoi(20);
         sv3.setDiem(9);
         
+        System.out.println(sv3.getHoTen());
+        
         System.out.println(sv1);
         System.out.println(sv2.toString());
         System.out.println(sv3.toString());
+        //constructor ko tham số
+        SinhVien sv4= new SinhVien();
+        sv4.nhap();
+        sv4.xuat();
+        //arraylist chứa tất cả các đối tượng Sinh Viên
+        ArrayList<SinhVien> listSinhVien= new ArrayList<>();
+        listSinhVien.add(sv1);//thêm sinh viên vào arraylist
+        listSinhVien.add(sv2);
+        //fore + ctrl+ cách 
+        for (SinhVien sv : listSinhVien) {
+//            sv.xuat();
+            System.out.println(sv.toString());
+        }
     }
 }
