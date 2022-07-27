@@ -27,14 +27,14 @@ public class SinhVien {
     private double diem;
 
     // 2. Constructor: hàm tạo
-    // 2 loại Constructor
+    // 2 loại Constructor => nếu ko có thì mặc định có Constructor ko tham số
     //Ctrl+ cách+ enter
-    // Chuột phải+ Insert Code (Alt+Insert) => Constructor
+    // 2.1 Chuột phải+ Insert Code (Alt+Insert) => Constructor
     //Constructor không tham số
     public SinhVien() {
     }
 
-    // Constructor có tham số
+    // 2.2 Constructor có tham số
     public SinhVien(String msv, String hoTen, String email, String diaChi, int tuoi, double diem) {
         this.msv = msv;
         this.hoTen = hoTen;
@@ -53,6 +53,7 @@ public class SinhVien {
     // Vì khi thuộc tính bị Private=> muốn lấy (get) và gán (set) giá trị
     // => phải sử dụng Getter và Setter
     // Chuột phải+ Insert Code (Alt+Insert) => Getter and Setter
+    //=> select all
     public String getMsv() {
         return msv;
     }
